@@ -18,7 +18,7 @@ Data flow is managed through GQL. Overkill, but the modularity of one fetch per 
 
 Images are fetched from a third-party website on demand, which is much less performant than (pre)loading them from the server/CDN. A fault of using mocked/dummy data that would not exist in production.
 
-Apollo client is the GQL client on the frontend. I set up infinite scrolling using paginated queries on the backend to fetch sequential chunks, and configuring Apollo to merge new articles into the existing cache on each refetch.
+Apollo client is the GQL client on the frontend. I set up infinite scrolling using paginated queries on the backend to fetch sequential chunks, and configured Apollo to merge new articles into the existing cache on each refetch.
 
 I also set up React Router, to enable keyboard navigation (back button) that users will expect in a web env, and to enable deep linking, which is very useful for marketing, link-sharing, and SEO purposes.
 
